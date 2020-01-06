@@ -73,10 +73,19 @@ let newLi = document.createElement("li");
 
 // 9) Give the li the text "four".
 // NOTE: you need to use the element created in #8 to do #9 and #10
+newLi.innerHTML = 'four'
 
 // 10) Append the li to the ul element.
+const ul = document.getElementById("list")
+ul.appendChild(newLi);
 
 // 11) Loop over all of the lis inside the ol tag and give them a background color of "green".
+let elements = document.getElementsByTagName("li")
+const elementsList = [...elements]
+
+for (let i=0; i < elementsList.length; i++) {
+  elementsList[i].style.backgroundColor = 'green'
+}
 
 // 12) Remove the div with a class of footer.
-
+footer.parentNode.removeChild(footer)

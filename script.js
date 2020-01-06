@@ -23,3 +23,11 @@ Write the code necessary to do the following:
 
 
 */
+
+
+/*
+1) Select the section with an id of container without using querySelector.
+*/
+
+let container = document.getElementById('container');
+console.log(container);
